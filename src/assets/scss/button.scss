@@ -1,0 +1,287 @@
+.ex__primary_btn {
+  background-color: map-get($colors, "secondary");
+  border-color: map-get($colors, "secondary");
+  color: #0f0f0f;
+  padding: 0 40px;
+  height: 45px;
+  font-size: 16px;
+  font-family: "rubik-medium";
+  transition: 0.5s;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(255, 186, 0, 0.35);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(255, 186, 0, 0.35);
+  box-shadow: 5px 5px 5px 0px rgba(255, 186, 0, 0.35);
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid map-get($colors, "secondary");
+    color: map-get($colors, "secondary");
+  }
+}
+.google-button {
+  background-color: map-get($colors, "light");
+  border-color: map-get($colors, "warning");
+  color: map-get($colors, "warning");
+  padding: 0 15px;
+  height: 50px;
+  border-radius: 68px;
+  border-bottom-left-radius: 0px;
+  font-size: 13px;
+  min-width: 200px;
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, "light");
+    border-color: map-get($colors, "warning");
+    color: map-get($colors, "warning");
+  }
+}
+.facebook-button {
+  background-color: map-get($colors, "light");
+  border-color: map-get($colors, "primary");
+  color: map-get($colors, "primary");
+  padding: 0 15px;
+  height: 50px;
+  border-radius: 68px;
+  border-bottom-left-radius: 0px;
+  font-size: 13px;
+  min-width: 200px;
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, "light");
+    border-color: map-get($colors, "primary");
+    color: map-get($colors, "primary");
+  }
+}
+.ex_grey_btn {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #0f0f0f;
+  padding: 0 40px;
+  height: 45px;
+  font-size: 16px;
+  font-family: "rubik-medium";
+  &:hover,
+  &:focus {
+    background-color: #f5f5f5;
+    border: #f5f5f5;
+    color: #0f0f0f;
+  }
+}
+.award-add-btn {
+  border-color: map-get($colors, "success");
+  color: map-get($colors, "success");
+  &:hover,
+  &:focus {
+    border-color: map-get($colors, "success");
+    color: map-get($colors, "success");
+  }
+}
+
+/* same_btn*/
+@mixin get_btn() {
+  background-color: #ffba00;
+  padding: 10px 30px;
+  margin: 0;
+  align-self: center;
+  color: #0f0f0f;
+  border-radius: 20px 20px 20px 0px;
+  border: 1px solid map-get($colors, "secondary");
+  margin: -5px auto;
+  &:hover,
+  &:focus {
+    border: 1px solid map-get($colors, "secondary");
+    border-radius: 20px 20px 20px 0;
+    background-color: transparent;
+    color: map-get($colors, "secondary");
+  }
+}
+@mixin green_btn() {
+  background: map-get($colors, "success");
+  color: map-get($colors, "light");
+  padding: 10px 0px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  border-radius: 20px 20px 20px 0;
+  font-weight: 600;
+  border: 1px solid map-get($colors, "success");
+  &:hover,
+  &:focus {
+    border: 1px solid map-get($colors, "success");
+    border-radius: 20px 20px 20px 0;
+    background-color: transparent;
+    color: map-get($colors, "success");
+  }
+}
+
+@mixin yellow_btn() {
+  background: map-get($colors, "secondary");
+  color: map-get($colors, "dark");
+  padding: 10px 0px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px 20px 20px 0;
+  border: 1px solid map-get($colors, "secondary");
+  font-weight: 600;
+  &:hover,
+  &:focus {
+    border: 1px solid map-get($colors, "secondary");
+    border-radius: 20px 20px 20px 0;
+    background-color: transparent;
+    color: map-get($colors, "secondary");
+  }
+}
+// Subtitle
+@mixin sub_title() {
+  color: #2fa686 !important;
+  font-weight: 800;
+  // text-transform: uppercase;
+  font-size: 18px;
+  padding: 30px 0;
+  margin-bottom: 0;
+  letter-spacing: 2.5px;
+}
+// Edit Button
+@mixin edit_btn() {
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid #ffba00;
+  color: #000;
+  transition: 0.5s;
+  &:hover,
+  &:focus {
+    background-color: #ffba00;
+    color: #000;
+  }
+  i {
+    color: #099670;
+  }
+}
+// Share Button
+@mixin share_btn() {
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid #ffba00;
+  color: #099670;
+  transition: 0.5s;
+  &:hover,
+  &:focus {
+    background-color: #ffba00;
+    color: #099670;
+  }
+  i {
+    color: #099670;
+  }
+}
+
+// Title With Line
+@mixin title_line() {
+  color: #2fa686 !important;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+
+span.yellow_btn {
+  background: map-get($colors, "secondary");
+  color: map-get($colors, "dark");
+  padding: 10px 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px 20px 20px 0;
+  width: 220px;
+  font-weight: 600;
+  border: 1px solid map-get($colors, "secondary");
+  &:hover,
+  &:focus {
+    border: 1px solid map-get($colors, "secondary");
+    border-radius: 20px 20px 20px 0;
+    background-color: transparent;
+    color: map-get($colors, "secondary");
+  }
+}
+span.green_btn {
+  background: map-get($colors, "success");
+  color: map-get($colors, "light");
+  padding: 10px 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px 20px 20px 0;
+  width: 220px;
+  font-weight: 600;
+  border: 1px solid map-get($colors, "success");
+  &:hover,
+  &:focus {
+    border: 1px solid map-get($colors, "success");
+    border-radius: 20px 20px 20px 0;
+    background-color: transparent;
+    color: map-get($colors, "success");
+  }
+}
+.barsMenu {
+  border-radius: 5px;
+  background-color: #F0F0F0;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+button.ant-btn.barsMenu.ant-btn-primary {
+  text-align: center;
+  padding: 0;
+}
+button.ant-btn.barsMenu.ant-btn-primary:hover {
+  background: #F0F0F0;
+}
+.menu_fix {
+  display: none;
+}
+
+@media (min-width:768px) and (max-width:991px){
+  .menu_fix {
+      display: block;
+  }
+  .mobile_menu {
+      display: none !important;
+  }
+  .ant-drawer.ant-drawer-top.ant-drawer-open .mobile_menu {
+      display: block !important;
+  }
+  .ant-drawer.ant-drawer-top.ant-drawer-open .mobile_menu .header-nav-list a {
+      color: #000 !important;
+      padding: 19px 0px 0px 0px;
+  }
+}
+
+
+@media (min-width:320px) and (max-width:767px){
+  .menu_fix {
+      display: block;
+      margin-right: 0 !important;
+  }
+  .mobile_menu {
+      display: none !important;
+  }
+  .ant-drawer.ant-drawer-top.ant-drawer-open .mobile_menu {
+      display: block !important;
+  }
+
+  .ant-drawer.ant-drawer-top.ant-drawer-open .mobile_menu .header-nav-list a {
+      color: #000 !important;
+      padding: 19px 0px 0px 0px;
+  }
+}
+
+
+// add new 01/07/2020
+button.ant-btn.view-more-trips.an-20.mt10.button_set,
+button.ant-btn.view-more-trips.an-20.mt10.button_meet,
+.banner_txt button.ant-btn.view-more-trips.an-20.mt10{
+    padding: 25px 35px;
+    font-size: 20px !important;
+    text-transform: capitalize;
+}

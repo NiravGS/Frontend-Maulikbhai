@@ -1,0 +1,25 @@
+.learning_sec {
+    .activity_sec {
+        overflow: hidden;
+        min-height: 40px;
+        max-height: 40px;
+    }
+    .online_tag {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: map-get($colors, "light");
+        border-radius: 20px;
+        padding: 3px 10px;
+        margin: 10px;
+        color: map-get($colors, "success");
+    }
+    .ant-card-cover img {
+        border-radius: 5px 5px 0 0;
+        height: 300px;
+        object-fit: cover;
+    }
+    .share_icn {
+        width: 35%;
+    }
+}

@@ -1,0 +1,114 @@
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1330px;
+  max-width: 100%;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+.main-content {
+  min-height: calc(100vh - 148px);
+  // overflow: auto;
+}
+.header_profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.header-container {
+  padding: 15px 0 0;
+  width: 100%;
+  background: #fff;
+  // box-shadow: rgba(0, 0, 0, 0.07) 0px 7px 7px 0px;
+  a {
+    color: map-get($colors, "dark");
+    &:hover {
+      color: map-get($colors, "secondary");
+    }
+  }
+  .header-logo {
+    font-size: 24px;
+    font-family: cursive;
+  }
+  .header-nav-list {
+    padding: 10px;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.13);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.23);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.header-nav-list .active {
+  color: map-get($colors, "success");
+  height: auto;
+  &:after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #ffba00;
+    display: list-item;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+  }
+}
+
+.profile_bg {
+  width: 140px;
+  .cursor-pointer {
+    color: map-get($colors, "success") !important;
+    padding: 10px 25px;
+    a {
+      color: map-get($colors, "dark");
+      font-size: 14px;
+      &:hover {
+        color: map-get($colors, "success");
+      }
+    }
+    &:hover {
+      background: #0996700d;
+      color: map-get($colors, "success");
+    }
+  }
+  .border_bottom,
+  .border_top {
+    border-bottom: 1px solid #c3c3c3;
+    padding-bottom: 10px;
+    margin: 0 20px;
+  }
+}
+.ant-popover-inner {
+  border-radius: 10px;
+}
+.ant-popover-inner-content {
+  padding: 10px 0;
+  box-shadow: 17px 13px 25px rgba(0, 0, 0, 0.1);
+}

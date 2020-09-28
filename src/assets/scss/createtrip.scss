@@ -1,0 +1,126 @@
+.cover-uploader {
+  border: 1px dashed #d3d3d3;
+  width: 700px;
+  height: 280px;
+  border-radius: 10px;
+  img {
+    width: 100px;
+    height: 92px;
+    object-fit: contain;
+  }
+}
+
+.step-1-expert-form {
+  .ant-slider-handle {
+    border-color: map-get($colors, "success") !important;
+    background-color: map-get($colors, "success");
+    &:hover {
+      border-color: map-get($colors, "success");
+    }
+  }
+  .ant-slider-track {
+    background-color: map-get($colors, "success") !important;
+    &:hover {
+      border-color: map-get($colors, "success");
+    }
+  }
+  .ant-slider-dot-active {
+    border-color: map-get($colors, "success");
+    &:hover {
+      border-color: map-get($colors, "success");
+    }
+  }
+  .ant-slider-mark-text-active {
+    color: map-get($colors, "success") !important;
+  }
+  .step-1-expert-form .ant-slider-dot-active {
+    background-color: map-get($colors, "success") !important;
+  }
+  .ant-slider-dot {
+    background: map-get($colors, "success");
+    width: 14px;
+    height: 14px;
+    margin-top: -3px;
+    border: none;
+    margin-left: -7px;
+  }
+  // .ant-slider-step {
+  //   background-color: #d1d2d2;
+  // }
+  .ant-radio-button-wrapper-checked {
+    background: map-get($colors, "success");
+    color: map-get($colors, "light");
+    border-color: map-get($colors, "light");
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid map-get($colors, "success") !important;
+    &:hover {
+      background: transparent;
+      color: map-get($colors, "success");
+      border: 1px solid map-get($colors, "success") !important;
+    }
+  }
+  .ant-form-item #createTrips_suitable label {
+    margin-right: 10px;
+    border-radius: 5px;
+    &:hover {
+      color: map-get($colors, "light");
+      background: map-get($colors, "success");
+    }
+  }
+  .ant-radio-button-wrapper:not(:first-child)::before {
+    display: none;
+  }
+  .ant-radio-button-wrapper {
+    border: 1px solid #d3d3d3;
+    padding: 0 30px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .ant-radio-group {
+    display: block !important;
+  }
+  .ant-form-item-children {
+    line-height: 40px;
+  }
+}
+
+
+.msg_icn {
+  position: absolute;
+  right: -5px;
+  align-self: start;
+  padding-top: 5%;
+  color: red;
+}
+.date_icn {
+  position: absolute;
+  right: -5px;
+  align-self: start;
+  padding-top: 15px;
+  color: red;
+}
+
+.ln_sec{
+  .ant-form-item-children {
+      line-height: 0px;
+  }
+}
+
+.autocomplete-dropdown-container {
+  line-height: 2;
+  border: 1px solid white;
+  padding: 10px;
+  .suggestion-item {
+    margin-top: 2px;
+    padding: 5px;
+    align-items: flex-start;
+  }
+  .suggestion-item--active {
+    background-color: #f7b91491;
+  }
+}
+
+.ant-form-item-label > label::after {
+  content: '';
+}

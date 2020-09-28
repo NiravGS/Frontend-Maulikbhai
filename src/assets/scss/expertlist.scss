@@ -1,0 +1,192 @@
+.expedition_head_bg {
+  background-image: url("../../assets/images/6224.png");
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  h1 {
+    color: map-get($colors, "light");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.expert_bg {
+  .ant-card-body {
+    padding: 10px 15px;
+  }
+  h6 {
+    color: map-get($colors, "success");
+    min-height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+  }
+  .ant-card-cover {
+    img {
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+  .ant-badge-status-dot {
+    display: none;
+  }
+  .ant-badge-status-text {
+    margin: 0;
+    color: map-get($colors, "success");
+  }
+  .ant-card-bordered {
+    border-radius: 7px;
+    border: none;
+    border-color: rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+  }
+  .ant-card-bordered {
+    border-radius: 20px;
+  }
+  a {
+    padding: 10px 40px;
+  }
+}
+.feature_bg {
+  .loadmore_btn a {
+    padding: 10px 40px;
+    margin-top: 40px;
+    display: inline-block;
+    line-height: 30px;
+  }
+  h3 {
+    color: map-get($colors, "success");
+  }
+  .ant-card-bordered {
+    border-radius: 7px;
+    border: none;
+    border-color: rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+  }
+  .ant-card-body {
+    padding: 10px;
+  }
+  .ant-badge-status-text {
+    margin-left: 8px;
+    color: map-get($colors, "dark");
+    font-size: 12px;
+  }
+  .price_sec {
+    border-bottom: 1px solid #d3d3d3;
+  }
+  .ant-card-cover {
+    img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
+}
+.filter_sec_bg .filter_left .ant-collapse > .ant-collapse-item:last-child {
+  border-bottom: none;
+  border-radius: 20px 20px 20px 20px;
+  background: #fff;
+}
+
+// Like
+.heart_fill {
+  input[type="checkbox"] {
+    clear: both;
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label {
+    cursor: pointer;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    float: right;
+  }
+
+  input[type="checkbox"] + label:before {
+    content: "";
+    z-index: -1;
+    background: rgb(220, 72, 127);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    -webkit-ransform: scale(0);
+  }
+
+  input[type="checkbox"] + label:after {
+    content: "";
+    z-index: -1;
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+  input[type="checkbox"]:checked + label svg {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    fill: rgb(220, 72, 127);
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+  }
+
+  input[type="checkbox"]:checked + label:after {
+    -webkit-animation: like-a 0.3s 0.2s forwards;
+    -moz-animation: like-a 0.3s 0.2s forwards;
+    animation: like-a 0.3s 0.2s forwards;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    -webkit-animation: like-a 0.5s 0s forwards;
+    -moz-animation: like-a 0.5s 0s forwards;
+    animation: like-a 0.5s 0s forwards;
+  }
+
+  label svg {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 20px;
+    margin-top: 5px;
+    fill: rgb(167, 167, 167);
+  }
+}
+
+@-webkit-keyframes like-a {
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+  }
+}
+@-moz-keyframes like-a {
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+  }
+}
+@keyframes like-a {
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+  }
+}

@@ -1,0 +1,239 @@
+.policy_sec p {
+  line-height: 25px;
+}
+.day_sec {
+  border-bottom: 1px solid #d3d3d3;
+}
+// Expeditions Details
+.exclusion_sec {
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  padding: 10px;
+   h4 {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 20px;
+  }
+}
+.inclusion_sec {
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  padding: 10px;
+  h4 {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 20px;
+  }
+  .inc_ul li {
+    list-style: none;
+    &:before {
+      content: url("../../assets/images/tick_ic.png");
+      padding-right: 10px;
+    }
+  }
+
+  .exc_ul li {
+    list-style: none;
+    &:before {
+      content: url("../../assets/images/close_ic.png");
+      padding-right: 10px;
+    }
+  }
+}
+.map img {
+  background-size: cover;
+  width: 100%;
+}
+.expedition_bg {
+  .trip_exp_bg {
+    border: 1px solid #ffba00;
+    img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    img:nth-child(5) {
+      width: 5%;
+      height: 15%;
+    }
+    span {
+      padding: 10px 40px;
+      display: inline-block;
+      line-height: 30px;
+    }
+  }
+  .trip_detail_des {
+    h4 {
+      color: map-get($colors, "success");
+    }
+  }
+  .person_sec {
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    h1 {
+      color: map-get($colors, "success");
+      span {
+        color: map-get($colors, "dark");
+      }
+    }
+  }
+}
+.gallery_bg {
+  // background-image: url("../../assets/images/gallery_bg.png");
+  background-size: cover;
+  height: 100vh;
+  &:before {
+    content: "";
+    background-color: #000;
+    height: 100vh;
+    display: block;
+    opacity: 0.6;
+  }
+}
+
+.gallery_sec {
+  margin-top: -18rem;
+  .ant-avatar > img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+  }
+  .ant-list-item-meta:before {
+    content: "";
+    background: #ffba00;
+    height: 40px;
+    width: 1px;
+  }
+  .ant-list-item-meta-description {
+    color: map-get($colors, "light") !important;
+    overflow: hidden;
+    min-height: 43px;
+    max-height: 43px;
+  }
+  h4 {
+    color: map-get($colors, "light");
+  }
+  h1 {
+    width: 500px;
+    color: map-get($colors, "light");
+    // &:after {
+    //   content: "";
+    //   background: #ffba00;
+    //   height: 3px;
+    //   width: 40px;
+    //   display: block;
+    //   margin-top: 20px;
+    // }
+  }
+
+  .trip_border_btm {
+    margin-bottom: 28px;
+      &:after {
+     content: "";
+      background: #ffba00;
+      height: 3px;
+      width: 25px;
+      display: block;
+      margin-top: 10px;
+      position: absolute;
+    }
+    span {
+      text-align: left;
+    }
+  }
+  
+}
+
+// Date Section
+.date_sec {
+  background-color: map-get($colors, "light");
+  padding: 20px;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1);
+  .header_per_txt {
+    border-bottom: 1px solid #d3d3d3;
+    h2 {
+      color: map-get($colors, "success");
+    }
+  }
+  .ant-radio-button-wrapper {
+    margin: 10px 10px 0 0;
+    border-radius: 20px;
+  }
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background-color: map-get($colors, "success");
+    border-color: map-get($colors, "success");
+    color: map-get($colors, "light");
+    border-radius: 18px;
+  }
+  a {
+    width: 150px;
+    padding: 15px 25px;
+  }
+  .ant-radio-button-wrapper {
+    background-color: map-get($colors, "grey");
+    color: map-get($colors, "dark");
+    border: 1px solid #d9d9d9;
+    &:hover {
+      background-color: map-get($colors, "grey");
+      color: map-get($colors, "dark");
+    }
+  }
+  .ant-radio-button-wrapper:not(:first-child) {
+    &:before {
+      display: none;
+    }
+  }
+  .share_btn {
+    border: 1px solid map-get($colors, "secondary");
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    img {
+      width: 15px;
+    }
+  }
+}
+.price_sec {
+  h5 {
+    overflow: hidden;
+    min-height: 40px;
+    max-height: 40px;
+  }
+  p:nth-child(3) {
+    overflow: hidden;
+    min-height: 40px;
+    max-height: 40px;
+  }
+  p {
+    width: 100%;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    margin-bottom: 10px !important;
+    overflow: hidden;
+    min-height: 25px;
+    max-height: 25px;
+    white-space: nowrap;
+  }
+}
+.btn_yellow {
+  .yellow_btn {
+    width: 175px;
+  }
+  .green_btn {
+    width: 140px;
+  }
+}
+
+.trip_inclusion_sec{
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  padding: 30px;
+  h4 {
+    border-bottom: 1px solid #d3d3d3;
+  }
+}
+
+.ant-list-item-meta-avatar {
+    margin-right: 16px;
+    padding-left: 5px;
+}

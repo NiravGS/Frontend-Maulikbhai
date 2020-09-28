@@ -1,0 +1,241 @@
+.w_bg {
+    .gallery_sec {
+        margin-top: -20rem;
+    }
+    .trip_exp_bg {
+        border: none;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+    }
+    .trip_exp_bg img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .sub_title {
+        color: map-get($colors, "dark") !important;
+        text-transform: capitalize;
+        letter-spacing: normal;
+    }
+    .grn_txt {
+        color: map-get($colors, "success");
+    }
+    #location_img {
+        width: 30px;
+        vertical-align: -webkit-baseline-middle;
+        height: 30px;
+        border-radius: unset;
+        object-fit: contain;
+    }
+    .bx_bg {
+        height: 120px;
+        background-color: #f8f8f8;
+        width: 120px;
+    }
+    .inclusion_sec .exc_ul li {
+        display: flex;
+    }
+    .inclusion_sec .inc_ul li {
+        display: flex;
+    }
+    .inclusion_sec {
+        border-radius: 5px;
+        li {
+            list-style: none;
+            font-size: 16px;
+            color: #0F0F0F;
+            line-height: 25px;
+            padding-bottom: 10px;
+            &:before {
+                content: url("../../assets/images/tick_ic.png");
+                position: absolute;
+                left: 30px;
+            }
+        }
+    }
+    .exclusion_sec {
+        border-radius: 5px;
+        li {
+            list-style: none;
+            padding-bottom: 10px;
+            font-size: 16px;
+            line-height: 25px;
+            color: #0F0F0F;
+            &:before {
+                content: url("../../assets/images/close_ic.png");
+                position: absolute;
+                left: 30px;
+            }
+        }
+    }
+    .ex__primary_btn {
+        padding: 10px 40px;
+    }
+    .photo_sec img {
+        border-radius: 5px;
+        width: 100%;
+    }
+    .price_sec h3 {
+        color: map-get($colors, "success");
+    }
+    hr.light_clr {
+        border-color: map-get($colors, "grey");
+    }
+    .photo_sec img {
+        border-radius: 5px 5px 0 0;
+    }
+    .ant-card-bordered {
+        border-radius: 5px;
+        border: none;
+        box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .person_sec {
+        background: #f8f8f8;
+        border-top: none;
+        border-bottom: none;
+        border-radius: 5px;
+        padding: 40px 30px;
+        display: flex;
+        align-items: baseline;
+
+        h6 {
+            text-align: right;
+            display: block;
+            margin-bottom: 0;
+            padding: 20px 5px;
+            color: map-get($colors, "primary");
+        }
+    }
+    .yellow_btn {
+        background-color: map-get($colors, "secondary");
+        padding: 10px 15px;
+        border-radius: 5px !important;
+        width: 45%;
+        border: 1px solid map-get($colors, "secondary");
+        &:hover {
+            background-color: transparent;
+            border: 1px solid map-get($colors, "secondary");
+            border-radius: 5px;
+        }
+    }
+    .green_btn {
+        background-color: map-get($colors, "success");
+        padding: 10px 15px;
+        border-radius: 5px !important;
+        width: 45%;
+        color: map-get($colors, "light");
+        border: 1px solid map-get($colors, "success");
+        &:hover {
+            background-color: transparent;
+            border: 1px solid map-get($colors, "success");
+            color: map-get($colors, "success");
+            border-radius: 5px;
+        }
+    }
+    .bg_map {
+        background-color: #ffffff;
+        padding: 0 20px;
+        border-radius: 5px;
+        .map img {
+            border-radius: 5px;
+        }
+    }
+    .share_btn {
+        border: none;
+    }
+    .btn_head {
+        .yellow_btn {
+            width: 45%;
+            display: inline-block;
+            text-align: center;
+        }
+        .green_btn {
+            width: 45%;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .select_date {
+        display: flex;
+    }
+    .date_sec a {
+        text-align: center;
+        border: 1px solid #d9d9d9;
+        border-radius: 20px;
+        z-index: 9;
+        padding: 10px 10px;
+        line-height: 20px;
+        width: 50%;
+    }
+
+    .edt_btn_sec a {
+        color: map-get($colors, "success");
+        border: 1px solid map-get($colors, "secondary");
+        display: inline-block;
+        display: inline-block;
+        border-radius: 20px;
+        background: map-get($colors, "light");
+        width: auto;
+        padding: 5px 15px;
+        text-align: center;
+    }
+    .header_edit {
+        position: absolute;
+        right: 0;
+        bottom: -35px;
+    }
+    .brder_sec {
+        .border_btm {
+            border-bottom: 1px solid #d3d3d3;
+        }
+        .brder_nn {
+            border-bottom: none;
+        }
+    }
+}
+
+.head_title {
+  border-bottom: 1px solid #bbbbbb;
+
+  h5 {
+    color: map-get($colors, "success");
+  }
+}
+.date_mdl {
+  border-bottom: 1px solid #dddddd;
+  padding-top: 10px;
+  .ant-row {
+    align-items: flex-end;
+    display: flex;
+  }
+  .interest_btn {
+    background: map-get($colors, "secondary");
+    color: map-get($colors, "dark");
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .reserve_btn {
+    background: map-get($colors, "success");
+    color: map-get($colors, "light");
+    border-radius: 5px;
+    padding: 10px 30px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.acco_line {
+    p {
+        margin-top: 0;
+        margin-bottom: 1em;
+        line-height: 27px;
+    }
+}

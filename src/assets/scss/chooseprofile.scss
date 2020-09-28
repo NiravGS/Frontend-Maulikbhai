@@ -1,0 +1,80 @@
+.choose-profile-modal {
+  .ant-modal-content {
+    box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2),
+      0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+  }
+  .radio-text {
+    position: absolute;
+    bottom: -35px;
+    color: map-get($colors, "dark") !important;
+  }
+  .ant-radio-button-wrapper-checked {
+    .radio-text {
+      color: map-get($colors, "secondary") !important;
+    }
+  }
+  .ant-radio-group-solid
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+    outline: 0 !important;
+  }
+  .ant-radio-button-wrapper:not(:first-child)::before {
+    background-color: transparent !important;
+  }
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: transparent !important;
+  }
+  .ant-radio-group-solid
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background-color: #fff;
+    border-color: map-get($colors, "secondary");
+    border-left: 1px solid map-get($colors, "secondary") !important;
+  }
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    box-shadow: none;
+  }
+  .ant-modal-header {
+    border: 0;
+    border-radius: 10px;
+  }
+  .ant-modal-title {
+    text-align: center;
+    color: map-get($colors, "success");
+    font-family: "rubik-medium";
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+.choose-radio-btn {
+  box-shadow: none !important;
+  min-width: 100px;
+  background-color: #fff;
+  height: 100px;
+  border-radius: 20px 20px 20px 0px !important;
+  border-left: 1px solid #d9d9d9 !important;
+  &:hover {
+    .radio-text {
+      color: map-get($colors, "dark") !important;
+    }
+  }
+  &:focus {
+    outline: 0 !important;
+  }
+}
+
+.success-modal{
+    width: 450px !important;
+    .ant-modal-content{
+      border-radius: 20px;
+    }
+    h1{
+      color:map-get($colors, "success");
+    }
+    p{
+      color:map-get($colors, "dark");
+    }
+    .ant-modal-body{
+      padding: 30px;
+    }
+  }
